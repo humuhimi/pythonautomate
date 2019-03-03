@@ -1,0 +1,57 @@
+os.path.join:osに依存する正しいパスを文字列として返す
+
+
+os.getcwd():現在のディレクトリを表示する
+
+os.chdir()：現在のworkingディレクトリを変更する
+
+os.makedirs(): 複数のディレクトリを作成する
+
+
+os.path.abspath(path) : 引数の絶対パスを返す
+
+os.path.isabs(path): 絶対パスか判断して真偽を返す
+
+os.path.relpath(path,start) : start地点からの相対パスを返す。無しなら、現在のパスから相対パスを返す。
+
+os.path.dirname(path) : 最後のパス区切記号までの文字列を返す
+
+os.path.basename(path) : 最後のパス区切からの文字列を返す
+
+os.path.split(path) : pathで区切った文字列を入れる
+
+path名.split(os.sep) : パス区切を全てリスト型として格納
+
+os.path.getsize(path) : ファイルのサイズをバイト単位で返す
+
+os.listdir(path) : pathに指定したフォルダ内にあるファイル名とファイル名のリストを返す
+
+os.path.exists(path) : ファイルが存在するかしないか
+
+os.path.isfile.(path) : ファイルかどうか
+
+os.path.isdir.(path) : ディレクトリかどうか
+
+
+---------------------------8.3
+
+a = open(---.'r') 読み/ 'w'は書き込みモード/ 'a'で追記モード
+b =  a.read()
+b = a.readlines() # 改行される 
+a.write('-')
+a.close()
+---------------------------8.4
+
+shelveというバイナリファイルとして保存可能にする　
+辞書型で管理することができるようになる。
+*リスト型ではないから可視化するにはリストに渡す必要がある
+In [64]: list(shelf_file.keys())                                                
+Out[64]: ['alpha']
+
+In [65]: list(shelf_file.values())                                              
+Out[65]: [['a', 'b', 'c']]
+---------------------------8.5
+
+pprint.pformat()でpythonファイルに書き込めるコードとして保存する。
+
+
